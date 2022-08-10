@@ -1,0 +1,576 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+:root {
+  --white-color: rgb(255, 255, 255);
+  --background-white-color: rgb(249, 249, 249);
+  --dark-color: rgb(49, 48, 48);
+  --primary-blue-color: rgb(142, 217, 247);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color: var(--white-color);
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: var(--white-color);
+}
+
+/** KOMPONENTIT **/
+.btn {
+  padding: 10px;
+  width: 150px;
+  border-radius: 6px;
+  font-family: inherit;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.2s;
+}
+
+.btn:active {
+  transform: translateY(2px);
+}
+
+.container {
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+/** LAYOUT **/
+
+section {
+  width: 100%;
+  background-color: var(--primary-blue-color);
+}
+
+.about__section .container {
+  width: 70%;
+}
+
+.calendar__section .container {
+  background-color: var(--background-white-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__section {
+  background-color: var(--primary-blue-color);
+  padding: 0;
+}
+/** OTSIKOT **/
+
+h1 {
+  font-size: 70px;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 60px;
+  margin-bottom: 100px;
+  color: var(--white-color);
+}
+/** ETUSIVU **/
+
+.header {
+  height: 100vh;
+  min-height: 100vh;
+  background-image: url(./images/tausta.jpg);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/** VALIKKO **/
+
+nav {
+  width: 100%;
+  padding: 0 80px;
+  transition: 0.5s;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  list-style: none;
+}
+
+.nav__logo {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.nav__links-item {
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.nav__links-item:hover {
+  color: var(--primary-blue-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header__text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.heading__primary-text {
+  width: 57%;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.header__btn-content {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn__header-about {
+  color: var(--primary-blue-color);
+  background: transparent;
+  border: 1px solid var(--primary-blue-color);
+}
+
+.btn__header-about:hover {
+  color: var(--white-color);
+  background: solid;
+  background-color: var(--primary-blue-color);
+}
+
+.btn__header-calendar {
+  color: var(--white-color);
+  background: transparent;
+  border: 1px solid var(--white-color);
+}
+
+.btn__header-calendar:hover {
+  color: var(--dark-color);
+  background: solid;
+  background-color: var(--white-color);
+  border: 1px solid var(--white-color);
+}
+
+/** MEISTÄ **/
+
+.about__content-info_text {
+  margin-top: 20px;
+  color: rgb(70, 66, 66);
+  font-size: 22px;
+  width: 50%;
+  flex-grow: 1;
+}
+
+.about__content-info {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__content-info_text-link {
+  color: var(--white-color);
+}
+
+.about__content-info-img {
+  width: 400px;
+  height: 400px;
+  background-color: var(--white-color);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__content-info_text:nth-child(1) {
+  margin-right: 10px;
+}
+
+.about__content-info_text:nth-child(2) {
+  margin-left: 20px;
+}
+.about__content-info_text:last-of-type {
+  margin-top: 40px;
+}
+/** KALENTERI **/
+
+.calendar__header {
+  color: var(--primary-blue-color);
+}
+
+.calendar__container {
+  width: 600px;
+  background-color: var(--primary-blue-color);
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/** YHTEYSTIEDOT **/
+
+.contact__section-container {
+  display: flex;
+}
+
+.contact__section-container-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.contact__section-container-info-heading {
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+.contact__section-container-info-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__section-container-info-section-header {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.contact__section-container-info-section-header:last-of-type {
+  margin-top: 15px;
+}
+
+.contact__section-container-contact {
+  padding: 60px 0;
+  background-color: rgb(86, 171, 204);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 60%;
+}
+input {
+  width: 100%;
+  padding: 13px 0;
+  border-radius: 6px;
+  border: none;
+  font-family: inherit;
+  font-size: 15px;
+  padding-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  border-radius: 6px;
+  font-size: 15px;
+  border: none;
+  font-family: inherit;
+  padding: 7px 15px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+label {
+  font-size: 17px;
+}
+
+.btn__send {
+  border: none;
+  font-family: inherit;
+}
+
+.btn__send:focus {
+  transform: scale(0.98);
+}
+
+/**** TAKAISIN YLÖS PAINIKE ****/
+
+.btn__top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 99;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  background-color: rgb(52, 123, 151);
+  color: var(--white-color);
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.btn__top.scroll_top {
+  display: block;
+}
+
+/**** HAMPURILAISPAINIKE MOBIILILLE ****/
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: var(--white-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle .burger__line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .burger__line2 {
+  opacity: 0;
+}
+
+.toggle .burger__line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/*****************************/
+
+@media only screen and (max-width: 1250px) {
+  .nav__links {
+    width: 40%;
+  }
+
+  .nav__logo {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .nav__links-item {
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+
+  h1 {
+    font-size: 50px;
+    margin-bottom: 25px;
+  }
+
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 100px;
+    color: var(--white-color);
+  }
+
+  .heading__primary-text {
+    width: 57%;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .about__content-info_text {
+    font-size: 18px;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .burger {
+    display: block;
+    z-index: 1000;
+  }
+
+  .nav__logo {
+    z-index: 1000;
+  }
+
+  .nav__links {
+    transform: translateX(100%);
+    position: fixed;
+    background-color: var(--primary-blue-color);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+    z-index: 999;
+  }
+
+  .nav__links.collapse {
+    display: none;
+  }
+  .nav__links-item {
+    margin-top: 40px;
+    font-size: 30px;
+  }
+
+  .nav__links-item:hover {
+    color: var(--font-grey-color);
+  }
+  .nav-active {
+    transform: translateX(0%);
+  }
+  .header__text-box {
+    padding-top: 50x;
+  }
+
+  .about__content-info_text {
+    font-size: 18px;
+    width: 60%;
+  }
+
+  .about__content-info-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .about__section .container {
+    width: 90%;
+  }
+
+  .contact__section-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact__section-container-info {
+    width: 100%;
+    padding: 150px 0;
+  }
+
+  .contact__section-container-info-heading {
+    margin-bottom: 30px;
+  }
+
+  .contact__section-container-info-section {
+    width: 100%;
+  }
+
+  .contact__section-container-contact {
+    width: 100%;
+  }
+
+  .btn__send {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+
+  .about__content-info {
+    flex-direction: COLUMN;
+    align-items: CENTER;
+    justify-content: CENTER;
+    margin-top: 0;
+  }
+
+  .about__content-info:nth-child(3) {
+    flex-direction: column-reverse;
+  }
+
+  .about__content-info_text {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .about__content-info-img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 15px;
+  }
+
+  .about__section .container {
+    width: 90%;
+  }
+
+  .calendar__container {
+    width: 90%;
+    background-color: var(--primary-blue-color);
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  nav {
+    padding: 0 20px;
+  }
+
+  h1 {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+
+  .heading__primary-text {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  form {
+    width: 80%;
+  }
+}

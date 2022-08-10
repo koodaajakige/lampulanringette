@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Lampulan Ringette ry</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+        <nav class="nav">
+          <div class="nav__container">
+            <a href="#" class="nav__logo">Lampulan ringette ry</a>
+            <ul class="nav__links">
+              <li class="nav__links-item"><a href="#header">Etusivu</a></li>
+              <li class="nav__links-item"><a href="#about">Meistä</a></li>
+              <li class="nav__links-item"><a href="#calendar">Kalenteri</a></li>
+              <li class="nav__links-item">
+                <a href="#contact">Yhteystiedot</a>
+              </li>
+            </ul>
+
+            <div class="burger">
+              <div class="burger__line1"></div>
+              <div class="burger__line2"></div>
+              <div class="burger__line3"></div>
+            </div>
+          </div>
+        </nav>
+        <div class="header__text-box">
+          <div class="header__text-content">
+            <h1 class="heading__primary">Aika laittaa luistimet jalkaan?</h1>
+            <p class="heading__primary-text">
+              Meiltä Lampulan ringetteyhdistykseltä löytyy monia
+              harrastusmahdollisuuksia jääurheilun ystäville.
+            </p>
+          </div>
+          <div class="header__btn-content">
+            <button
+              class="btn btn__header-about"
+              onclick="location.href='#about'"
+            >
+              Tutustu
+            </button>
+            <button
+              class="btn btn__header-calendar"
+              onclick="location.href='#calendar'"
+            >
+              Kalenteri
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="about__section" id="about">
+      <div class="container">
+        <h2 class="about__section-header">Meistä</h2>
+
+        <div class="about__content">
+          <div class="about__content-info">
+            <p class="about__content-info_text">
+              Lampulan Ringette tarjoaa nuorille mahdollisuuden harrastaa
+              urheilua turvallisessa ympäristössä. Yhdistys on vapaaehtois
+              pohjainen, jossa valmennus koostuu harrastuksesta kiinnostuneista
+              vanhemmista.
+            </p>
+            <div class="about__content-info-img">Kuva 1</div>
+          </div>
+          <div class="about__content-info">
+            <div class="about__content-info-img">Kuva 2</div>
+            <p class="about__content-info_text">
+              Yhdistyksen toiminnan pääpaino on lasten ja nuorten
+              liikuntaharrastuksen mahdollistamisessa. Tarjoamme myös
+              mahdollisuuden osallistua erilaisiin peleihin ja turnauksiin.
+              Ringette on kaiken ikäisille soveltuva taitolaji, jossa näppäryys
+              korvaa voiman. Se on turvallinen laji, sillä vartalolla tapahtuvat
+              rajut kontaktit ovat kiellettyjä. Suomessa on tällä hetkellä
+              tuhansia lajin harrastajia, mukaan mahtuu aina uusia lajista
+              kiinnostuneita.
+            </p>
+          </div>
+          <p class="about__content-info_text">
+            Meidän
+            <a class="about__content-info_text-link" href="#">kalenteri</a>
+            osiosta löydät tarkemmat ajat sekä tapahtumat
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="calendar__section" id="calendar">
+      <div class="container">
+        <h2 class="calendar__header">Kalenteri</h2>
+        <div class="calendar__container">
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=gtpae1214v0m5nd4cs9ijdseb8%40group.calendar.google.com&ctz=Europe%2FHelsinki"
+            style="border: 0"
+            width="600"
+            height="600"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="contact__section" id="contact">
+      <div class="contact__section-container">
+        <div class="contact__section-container-info">
+          <h3 class="contact__section-container-info-heading">Yhteystiedot</h3>
+          <div class="contact__section-container-info-section">
+            <h4 class="contact__section-container-info-section-header">
+              Asiakaspalvelu
+            </h4>
+            <p class="contact__section-info-text">010 000 000</p>
+            <p class="contact__section-info-text">
+              asiakaspalvelu@lampularingette.fi
+            </p>
+          </div>
+
+          <div class="contact__section-container-info-section">
+            <h4 class="contact__section-container-info-section-header">
+              Osoite
+            </h4>
+            <p class="contact__section-info-text">Satakunta</p>
+            <p class="contact__section-info-text">Härkäpakari</p>
+            <p class="contact__section-info-text">32700 Huittinen</p>
+          </div>
+        </div>
+        <div class="contact__section-container-contact">
+          <h3 class="form__header">Jäikö jotain kysyttävää?</h3>
+          <form action="#">
+            <label for="text">Nimi</label>
+            <input type="text" placeholder="Nimi" required />
+            <label for="email">Sähköposti</label>
+            <input type="email" placeholder="Sähköposti" required />
+            <label for="subject">Viesti</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Viesti"
+            ></textarea>
+            <button class="btn btn__send">Lähetä</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <button class="btn__top">&#8593;</button>
+    <script src="script.js"></script>
+  </body>
+</html>
